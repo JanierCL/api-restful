@@ -18,8 +18,7 @@ Este proyecto es una API RESTful realizada con Spring Boot 3+ que contiene vario
 # Instrucciones para Ejecutar la API
 1. Clonar el Repositorio:
    bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd tu-repositorio
+   git clone https://github.com/JanierCL/api-restful.git
 
 Compilar y Ejecutar la Aplicación:
 
