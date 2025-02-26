@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+
+<!-- Información del proyecto -->
+<groupId>com.example</groupId>
+<artifactId>api-restful</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<name>api-restful</name>
+<description>API RESTful con Spring Boot</description>
+
+<!-- Configuración de Spring Boot -->
+<parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>3.1.0</version> <!-- Usa la versión más reciente de Spring Boot 3.x -->
+	<relativePath/> <!-- Busca el parent en el repositorio -->
+</parent>
+
+<properties>
+	<java.version>17</java.version> <!-- Versión de Java -->
+</properties>
+
+<dependencies>
+	<!-- Dependencia para APIs RESTful -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+
+	<!-- Dependencia para pruebas -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+	</dependency>
+
+	<!-- Dependencia para WebFlux -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-webflux</artifactId>
+	</dependency>
+
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.30</version> <!-- la última versión estable -->
+		<scope>provided</scope>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-webflux</artifactId>
+	</dependency>
+
+	<dependency>
+		<groupId>io.projectreactor</groupId>
+		<artifactId>reactor-test</artifactId> <!-- para poder usar StepVerifier -->
+		<scope>test</scope>
+	</dependency>
+
+	<dependency>
+		<groupId>org.mockito</groupId>
+		<artifactId>mockito-core</artifactId>
+		<version>5.3.1</version> <!-- Usa la última versión -->
+	</dependency>
+
+</dependencies>
+
+<!-- Configuración del build -->
+<build>
+	<plugins>
+		<!-- Plugin de Spring Boot para empaquetar y ejecutar la aplicación -->
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+		</plugin>
+	</plugins>
+</build>
+</project>
